@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <!-- SECTION: Edit Profile -->
+        <PreferenceCategory android:title="Edit Profile">
+
+            <!-- Change Name -->
+            <Preference
+                android:key="edit_name"
+                android:title="Change Name"
+                android:summary="Update your display name" />
+
+            <!-- Change Dog Name -->
+            <Preference
+                android:key="edit_dog_name"
+                android:title="Change Dog Name"
+                android:summary="Update your dog's name" />
+
+            <!-- Edit Bio -->
+            <Preference
+                android:key="edit_bio"
+                android:title="Edit Bio"
+                android:summary="Update your personal bio" />
+
+            <!-- Edit Dog Traits -->
+            <Preference
+                android:key="edit_friendliness"
+                android:title="Edit Friendliness"
+                android:summary="Select your dog's friendliness level" />
+
+            <Preference
+                android:key="edit_size"
+                android:title="Edit Size"
+                android:summary="Select your dog's size" />
+
+            <Preference
+                android:key="edit_energy"
+                android:title="Edit Energy"
+                android:summary="Select your dog's energy level" />
+
+        </PreferenceCategory>
+
+        <!-- SECTION: Security Settings -->
+        <PreferenceCategory android:title="Security Settings">
+
+            <!-- Change Email -->
+            <Preference
+                android:key="change_email"
+                android:title="Change Email"
+                android:summary="Update your registered email address" />
+
+            <!-- Change Password -->
+            <Preference
+                android:key="change_password"
+                android:title="Change Password"
+                android:summary="Update your account password" />
+
+        </PreferenceCategory>
+
+        <!-- SECTION: Account Actions -->
+        <PreferenceCategory android:title="Account Actions">
+
+            <!-- Logout -->
+            <Preference
+                android:key="logout"
+                android:title="Logout"
+                android:summary="Sign out of your account" />
+
+        </PreferenceCategory>
+</androidx.preference.PreferenceScreen>

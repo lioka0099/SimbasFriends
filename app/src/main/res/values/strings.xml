@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">SimbasFriends</string>
+    <string name="welcome_screen_title">SIMBA\'S FRIENDS</string>
+    <string name="sign_up">Sign up</string>
+    <string name="log_in">Log In</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="back_arrow">back arrow</string>
+    <string name="back_Arrow"><![CDATA[<]]></string>
+    <string name="welcome_back">WELCOME BACK!</string>
+    <string name="create_new_account">CREATE\nNEW ACCOUNT</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="settings">Settings</string>
+    <string name="edit_profile_image">Edit Profile Image</string>
+    <string name="friendly">Friendly</string>
+    <string name="dog_size">Dog Size</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_friendsList">Friends</string>
+    <string name="title_events">Events</string>
+    <string name="new_event">Create New Event</string>
+    <string name="profile">Profile</string>
+    <string name="title_activity_location_picker">LocationPickerActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_an_address">Enter an address</string>
+    <string name="done">Done</string>
+    <string name="dog_s_name">Dog\'s Name</string>
+    <string name="tell_us_about_your_dog">Tell us about your dog</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="confirm_email">Confirm Email</string>
+    <string name="select_your_dog_s_traits">Select your dog\'s traits</string>
+    <string name="social_pawprint">🐾 Social Pawprint</string>
+    <string name="paw_size_scale">📏 Paw Size Scale</string>
+    <string name="zoomie_meter">⚡ Zoomie Meter</string>
+    <string name="select_trait">Select Trait</string>
+    <string name="location">Location</string>
+    <string name="use_current_location">Current location</string>
+    <string name="choose_from_map">Choose from map</string>
+    <string name="event_date">Event Date</string>
+    <string name="select_date">Select Date</string>
+    <string name="no_date_selected">No date selected</string>
+    <string name="event_time">Event Time</string>
+    <string name="select_time">Select Time</string>
+    <string name="no_time_selected">No time selected</string>
+    <string name="event_description">Event Description</string>
+    <string name="write_about_your_event">Write about your event...</string>
+    <string name="upload_event_image">Upload Event Image</string>
+    <string name="create_event">Create event</string>
+    <string name="leave_event">Leave Event</string>
+    <string name="participants">Participants</string>
+    <string name="close">Close</string>
+    <string name="user_name">User Name</string>
+    <string name="dog_name">Dog Name</string>
+    <string name="join_meeting">Join Meeting</string>
+    <string name="add_friend">add friend</string>
+    <string name="accept">accept</string>
+    <string name="deny">deny</string>
+    <string name="chat">chat</string>
+    <string name="friend_requests">Friend Requests</string>
+    <string name="your_friends">Your Friends</string>
+    <string name="send_button">send button</string>
+    <string name="type_a_message">Type a message...</string>
+</resources>

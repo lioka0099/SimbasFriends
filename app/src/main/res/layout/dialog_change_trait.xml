@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/traitTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_trait"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black"/>
+
+    <!-- Dropdown for trait selection -->
+    <AutoCompleteTextView
+        android:id="@+id/dropdownTrait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/select_trait"
+        android:background="@drawable/rounded_edittext_background"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:drawableEnd="@android:drawable/arrow_down_float"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="true"
+        android:inputType="none"/>
+
+</LinearLayout>

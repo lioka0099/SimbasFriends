@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    tools:context=".activities.LoginActivity">
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/activity_login_Back_Arrow"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/dark_green"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        app:icon="@drawable/back_arrow"
+        app:iconTint="@color/white"
+        android:contentDescription="@string/back_arrow"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/login_activity_dog_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/login_logo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_back"
+        android:textSize="18pt"
+        android:fontFamily="serif"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/login_activity_Email_Textedit"
+        android:layout_width="@dimen/welcome_btn"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:hint="@string/email_hint"
+        android:layout_marginBottom="16dp"
+        android:singleLine="true"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:background="@drawable/rounded_edittext_background" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/login_activity_Password_Textedit"
+        android:layout_width="@dimen/welcome_btn"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/password_hint"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:background="@drawable/rounded_edittext_background" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_activity_Log_In_Button"
+        android:layout_width="@dimen/welcome_btn"
+        android:layout_height="wrap_content"
+        android:text="@string/log_in"
+        android:backgroundTint="@color/dark_green"
+        android:layout_gravity="center_horizontal"
+        app:cornerRadius="30dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/login_activity_Forgot_Password_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_your_password"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

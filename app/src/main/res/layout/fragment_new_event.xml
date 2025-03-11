@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/background_color"
+    android:fillViewport="true"
+    android:layout_marginBottom="@dimen/default_nav_bottom_margin">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+<!-- Title -->
+<androidx.appcompat.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/new_event"
+    android:textSize="22sp"
+    android:textStyle="bold"
+    android:fontFamily="serif"
+    android:textColor="@color/black"
+    android:layout_marginTop="8dp" />
+
+<!-- Location Selection -->
+<androidx.appcompat.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/location"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:textColor="@color/grey"
+    android:fontFamily="serif"
+    android:layout_marginTop="16dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="8dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/useCurrentLocationBTN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/use_current_location"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:backgroundTint="@color/light_green"
+        app:cornerRadius="10dp"
+        android:layout_weight="1"
+        android:padding="12dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/chooseFromMapBTN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_from_map"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/dark_green"
+        android:padding="12dp"
+        android:fontFamily="serif"
+        android:layout_weight="1"
+        app:cornerRadius="10dp"
+        android:layout_marginStart="8dp" />
+</LinearLayout>
+
+<!-- Map View -->
+<com.google.android.gms.maps.MapView
+    android:id="@+id/mapView"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="8dp" />
+
+<!-- Date Picker -->
+<androidx.appcompat.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/event_date"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:fontFamily="serif"
+    android:textColor="@color/grey"
+    android:layout_marginTop="16dp" />
+
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/selectDateBTN"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/select_date"
+    android:textColor="@color/white"
+    android:backgroundTint="@color/blue"
+    android:padding="12dp"
+    android:fontFamily="serif"
+    app:cornerRadius="10dp"
+    android:layout_marginTop="8dp" />
+
+<androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/selectedDateTXT"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/no_date_selected"
+    android:layout_marginTop="4dp"
+    android:textSize="14sp"
+    android:fontFamily="serif"
+    android:textColor="@color/grey" />
+
+<!-- Time Picker -->
+<androidx.appcompat.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/event_time"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:textColor="@color/grey"
+    android:fontFamily="serif"
+    android:layout_marginTop="16dp" />
+
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/selectTimeBTN"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/select_time"
+    android:textColor="@color/white"
+    android:backgroundTint="@color/disabled_blue"
+    android:padding="12dp"
+    android:fontFamily="serif"
+    app:cornerRadius="10dp"
+    android:enabled="false"
+    android:layout_marginTop="8dp" />
+
+<androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/selectedTimeTXT"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/no_time_selected"
+    android:layout_marginTop="4dp"
+    android:textSize="14sp"
+    android:fontFamily="serif"
+    android:textColor="@color/grey" />
+
+<!-- Description -->
+<androidx.appcompat.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/event_description"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:textColor="@color/grey"
+    android:fontFamily="serif"
+    android:layout_marginBottom="16dp"
+    android:layout_marginTop="16dp" />
+
+        <!-- Upload Image -->
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/eventDescriptionET"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:gravity="top"
+            android:hint="@string/write_about_your_event"
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            android:textColor="@color/grey"
+            android:textSize="16sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/uploadEventImageBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_event_image"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/purple"
+            android:padding="12dp"
+            android:fontFamily="serif"
+            app:cornerRadius="10dp"
+            android:layout_marginTop="16dp" />
+
+<androidx.appcompat.widget.AppCompatImageView
+    android:id="@+id/eventImagePreview"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="8dp"
+    android:scaleType="centerCrop"
+    android:visibility="gone"
+    android:background="@drawable/rounded_edittext_background" />
+
+<!-- Create Event Button -->
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/createEventBTN"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/create_event"
+    android:textColor="@color/white"
+    android:backgroundTint="@color/disabled_light_green"
+    android:padding="12dp"
+    android:fontFamily="serif"
+    app:cornerRadius="10dp"
+    android:enabled="false"
+    android:layout_marginTop="24dp" />
+</LinearLayout>
+    </ScrollView>

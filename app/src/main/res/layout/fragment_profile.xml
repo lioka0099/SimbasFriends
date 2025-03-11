@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:padding="16dp"
+    android:background="@color/background_color"
+    android:layout_marginBottom="@dimen/default_nav_bottom_margin"
+    tools:context=".activities.ui.profile.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Settings Button -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/UserProfile_Settings_BTN"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/settings_icon"
+            android:layout_gravity="start" />
+
+        <!-- Profile Title -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/userProfile_Title_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Simba’s Profile"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp" />
+
+        <!-- Profile Picture -->
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="8dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/UserProfile_Profile_IMG"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/UserProfile_Camera_BTN"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="bottom|end"
+                android:background="@drawable/circular_button_background"
+                android:src="@drawable/camera_icon" />
+        </FrameLayout>
+
+        <!-- User Name -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/UserProfile_Name_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Lior Kapshitar"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp" />
+
+        <!-- User Bio -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/UserProfile_Bio_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Hello everyone! My name is Lior and I’m Simba’s mom."
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:fontFamily="serif"
+            android:layout_marginTop="4dp" />
+
+        <!-- Dog Traits -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/UserProfile_Dog_Traits_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Who is Simba?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="8dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/friendly_icon" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/UserProfile_Friendly_Trait_TXT"
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    tools:text="Friendly"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="serif"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="8dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/size_icon" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/UserProfile_Size_Trait_TXT"
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    tools:text="Big"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="serif"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="8dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/energetic_icon" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/UserProfile_Energy_Trait_TXT"
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    tools:text="Energetic"
+                    android:fontFamily="serif"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Dog Photos Gallery -->
+        <TextView
+            android:id="@+id/UserProfile_Dog_Photos_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Simba’s Photos"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp" />
+
+        <GridView
+            android:id="@+id/UserProfile_Dog_Photos_Grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:columnWidth="100dp"
+            android:verticalSpacing="8dp"
+            android:horizontalSpacing="8dp"
+            android:stretchMode="columnWidth"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

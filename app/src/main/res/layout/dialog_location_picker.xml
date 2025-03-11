@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input field for typing a location -->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/location_picker_Location_EditText"
+        android:layout_width="@dimen/welcome_btn"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/enter_an_address"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:background="@drawable/rounded_edittext_background" />
+
+    <!-- Container for the map -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/location_picker_Map_View"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <!-- Done button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/location_picker_Done_Button"
+        android:layout_width="@dimen/welcome_btn"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        android:backgroundTint="@color/dark_green"
+        android:layout_gravity="center_horizontal"
+        app:cornerRadius="30dp"
+        />
+</LinearLayout>
