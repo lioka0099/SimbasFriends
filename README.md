@@ -55,7 +55,7 @@
 - **Storage:** Firebase Storage
 - **Maps:** Google Maps API
 - **UI Components:**
-    - Jetpack Navigation
+    - Bottom Navigation
     - RecyclerView (for friends, events, and messages)
     - Lottie for animations
     - Glide for image loading
