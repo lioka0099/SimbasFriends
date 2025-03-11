@@ -1,7 +1,6 @@
 # 🐶 Simba’s Friends - Find Playdates for Your Dog!
 
 ## 📌 About the App
-*"When I moved to a new town, my dog had no friends to play with. I built this app to solve that problem!"*
 
 **Simba’s Friends** is a social networking app designed for **dog owners** to **find friends for their dogs**, schedule **meetups**, and **join local events**. Whether you're new in town or just looking to expand your dog's social circle, this app makes it **easy to connect with other dog owners nearby**.
 
@@ -51,7 +50,6 @@
 
 ## 🛠 Tech Stack
 - **Language:** Kotlin
-- **Architecture:** MVVM
 - **Database:** Firebase Firestore
 - **Authentication:** Firebase Auth
 - **Storage:** Firebase Storage
