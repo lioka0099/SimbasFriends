@@ -37,6 +37,6 @@
         android:text="@string/done"
         android:backgroundTint="@color/dark_green"
         android:layout_gravity="center_horizontal"
-        app:cornerRadius="30dp"
+        app:cornerRadius="10dp"
         />
 </LinearLayout>

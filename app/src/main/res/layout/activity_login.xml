@@ -69,7 +69,7 @@
         android:text="@string/log_in"
         android:backgroundTint="@color/dark_green"
         android:layout_gravity="center_horizontal"
-        app:cornerRadius="30dp"
+        app:cornerRadius="10dp"
         />
 
     <androidx.appcompat.widget.AppCompatTextView

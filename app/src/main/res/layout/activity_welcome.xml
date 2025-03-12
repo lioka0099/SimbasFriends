@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         app:backgroundTint="@color/dark_green"
-        app:cornerRadius="30dp"
+        app:cornerRadius="10dp"
         android:text="@string/sign_up" />
 
     <com.google.android.material.button.MaterialButton
@@ -41,6 +41,6 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/light_green"
-        app:cornerRadius="30dp"
+        app:cornerRadius="10dp"
         android:text="@string/log_in" />
 </androidx.appcompat.widget.LinearLayoutCompat>
