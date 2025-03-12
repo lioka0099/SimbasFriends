@@ -214,15 +214,22 @@
             android:textColor="@color/black"
             android:layout_marginTop="16dp" />
 
-        <GridView
-            android:id="@+id/UserProfile_Dog_Photos_Grid"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:numColumns="3"
-            android:columnWidth="100dp"
-            android:verticalSpacing="8dp"
-            android:horizontalSpacing="8dp"
-            android:stretchMode="columnWidth"
-            android:layout_marginTop="8dp"/>
+            android:orientation="vertical">
+            <GridView
+                android:id="@+id/UserProfile_Dog_Photos_Grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                android:columnWidth="100dp"
+                android:verticalSpacing="8dp"
+                android:horizontalSpacing="8dp"
+                android:stretchMode="columnWidth"
+                android:layout_marginTop="8dp"
+                android:nestedScrollingEnabled="true"/>
+        </LinearLayout>
+
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

@@ -87,7 +87,7 @@ class ProfileViewModel : ViewModel() {
 
         FirebaseStorageHelper.deleteGalleryImage(userId, imageUrl,
             onSuccess = {
-                fetchGalleryImages(userId) // ✅ Refresh gallery after deletion
+                fetchGalleryImages(userId) // Refresh gallery after deletion
                 _uploading.value = false
             },
             onFailure = { exeption ->
