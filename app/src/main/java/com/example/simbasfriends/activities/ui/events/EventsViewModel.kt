@@ -18,6 +18,33 @@ class EventsViewModel : ViewModel() {
     private val _eventList = MutableLiveData<List<Event>>()
     val eventList: LiveData<List<Event>> = _eventList
 
+//    fun fetchEvents(showPastEvents: Boolean) {
+//        val userEvents = userId?.let { fireStore.collection("users").document(it).collection("my_events") }
+//        userEvents?.get()?.addOnSuccessListener { eventDocs ->
+//            val eventIds = eventDocs.map { it.getString("eventId") ?: "" }
+//            if (eventIds.isEmpty()) {
+//                _eventList.postValue(emptyList())
+//                return@addOnSuccessListener
+//            }
+//
+//            fireStore.collection("events").whereIn("eventId", eventIds)
+//                .get().addOnSuccessListener { documents ->
+//                    val events = documents.mapNotNull { it.toObject(Event::class.java) }
+//                    val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+//
+//                    val filteredEvents = events.filter { event ->
+//                        val eventTimeStamp = dateFormat.parse(event.eventDate)?.time ?: 0L
+//                        showPastEvents || eventTimeStamp >= System.currentTimeMillis()
+//                    }
+//
+//                    _eventList.postValue(filteredEvents)
+//                }
+//                .addOnFailureListener {
+//                    _eventList.postValue(emptyList())
+//                }
+//        }
+//    }
+
     fun fetchEvents(showPastEvents: Boolean) {
         val userEvents = userId?.let { fireStore.collection("users").document(it).collection("my_events") }
         userEvents?.get()?.addOnSuccessListener { eventDocs ->
@@ -30,11 +57,19 @@ class EventsViewModel : ViewModel() {
             fireStore.collection("events").whereIn("eventId", eventIds)
                 .get().addOnSuccessListener { documents ->
                     val events = documents.mapNotNull { it.toObject(Event::class.java) }
-                    val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+                    val dateFormat = SimpleDateFormat("dd/MM/yyyy HH:mm", Locale.getDefault()) // 🟢 Include Time!
+
+                    val currentTimeMillis = System.currentTimeMillis()
 
                     val filteredEvents = events.filter { event ->
-                        val eventTimeStamp = dateFormat.parse(event.eventDate)?.time ?: 0L
-                        showPastEvents || eventTimeStamp >= System.currentTimeMillis()
+                        try {
+                            // Combine event date & time into a full timestamp
+                            val eventDateTime = dateFormat.parse("${event.eventDate} ${event.eventTime}")?.time ?: 0L
+                            showPastEvents || eventDateTime >= currentTimeMillis // Compare Full Timestamp ✅
+                        } catch (e: Exception) {
+                            Log.e("EventsViewModel", "Error parsing date: ${event.eventDate} ${event.eventTime}", e)
+                            false // Exclude events with parsing issues
+                        }
                     }
 
                     _eventList.postValue(filteredEvents)
