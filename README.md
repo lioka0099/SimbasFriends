@@ -10,60 +10,95 @@
 
 ### 🏠 User Profiles
 ✔️ Each user has a **profile** where they can:
-- Upload photos of their dog.
-- Edit their **bio** and **profile picture**.
-- View and manage their **friend list**.
+- Upload photos of their dog  
+- Edit their **bio** and **profile picture**  
+- View and manage their **friend list**  
 
 ### 🗺 Event Map & Listings
-✔️ The **main page** is a **map** displaying all **nearby dog events (within 20 km)**.  
-✔️ Users can tap on **events in a list**, and the map will **highlight their location**.  
-✔️ Event details include the **location, time, description, and list of participants**.
+✔️ The **main page** is a **map** displaying all **nearby dog events (within 20 km)**  
+✔️ Tap an event in the list and the map will **highlight its location**  
+✔️ Event details include **location**, **time**, **description**, and **participants**
 
 ### 🎉 Create & Join Events
-✔️ Users can **create their own events** by:
-- **Choosing their current location** or **typing an address**.
-- **Previewing the event location on the map** before confirming.  
-  ✔️ Users can **join events** and see a **list of participants** before deciding to attend.  
-  ✔️ Users can **view all their events** and **filter them**:
-    - **See only upcoming events**
-    - **View past events**
+✔️ Users can **create events** by:
+- **Using current location** or **typing an address**  
+- **Previewing the location** on the map before confirming  
+✔️ Users can **join events** and view participants before attending  
+✔️ Filter your events to see **upcoming** or **past** meetups
 
 ### 🐾 Friends & Chat
-✔️ Users can **send friend requests** to other dog owners.  
-✔️ Requests can be **accepted or denied**.  
-✔️ **One-on-one chat** allows friends to communicate and plan playdates.
+✔️ Send and respond to **friend requests**  
+✔️ **One-on-one chat** to plan playdates  
 
 ### 📸 Gallery & Image Uploads
-✔️ Users can **upload multiple photos** to their profile.  
-✔️ They can **delete photos** from their gallery at any time.  
-✔️ **Lottie animations** are used to **show a loading screen** when uploading photos.
+✔️ Upload and delete multiple **dog photos**  
+✔️ **Lottie animations** display during uploads for smoother UX  
 
 ### 🔄 Persistent Login
-✔️ Users stay **logged in** until they manually **log out**.
+✔️ Stay **logged in** until you choose to log out  
 
 ### 🎬 Smooth User Experience
-✔️ **Loading animations** (Lottie) are displayed for **long processes** like event creation and image uploads.  
-✔️ **Chat auto-scrolls** so the latest messages are always visible.  
-✔️ **Buttons & fields reset** after event creation, preventing duplicate submissions.
+✔️ **Loading animations** for long-running actions  
+✔️ **Auto-scrolling chat** to keep the latest messages in view  
+✔️ **Form resets** prevent duplicate submissions  
 
 ---
 
 ## 🛠 Tech Stack
-- **Language:** Kotlin
-- **Database:** Firebase Firestore
-- **Authentication:** Firebase Auth
-- **Storage:** Firebase Storage
-- **Maps:** Google Maps API
-- **UI Components:**
-    - Bottom Navigation
-    - RecyclerView (for friends, events, and messages)
-    - Lottie for animations
-    - Glide for image loading
-    - **ImagePicker** for selecting and cropping images
+- **Language:** Kotlin  
+- **Database:** Firebase Firestore  
+- **Authentication:** Firebase Auth  
+- **Storage:** Firebase Storage  
+- **Maps:** Google Maps API  
+- **UI:** Bottom Navigation · RecyclerView · Lottie · Glide · ImagePicker  
+
+---
+
+## 📸 Screenshots
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/76f69ee1-11cc-47d9-9f1f-c0efa00d94f4" alt="Welcome Screen" width="200"/><br>
+      **Welcome**
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/f7237b36-4695-4b88-8a2c-e810eed317b7" alt="Sign Up Screen" width="200"/><br>
+      **Sign Up**
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/d53553cc-d173-4c38-af19-e633d2a7c905" alt="Login Screen" width="200"/><br>
+      **Login**
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/2136fbfe-06f3-4646-86ac-16ccfd727854" alt="Main Map Screen" width="200"/><br>
+      **Main Map**
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/9f1823a4-17d8-4259-9e20-9184e764a92d" alt="Create Event Screen" width="200"/><br>
+      **Create Event**
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/0a15928f-e1b3-4388-912d-83f8286a353a" alt="Profile Screen" width="200"/><br>
+      **Profile**
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/285fb078-ecbd-4c97-9f26-c09b08f3847c" alt="Friend List Screen" width="200"/><br>
+      **Friend List**
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/cb9b86ba-21c8-4f57-87dd-e62bd21d1cd0" alt="Events List Screen" width="200"/><br>
+      **Events List**
+    </td>
+    <td></td>
+  </tr>
+</table>
 
 ---
 
 ## 💡 Final Thoughts
-**Simba’s Friends** is designed to help dog owners build a social network **for their pets**. Whether you want to **find a playmate**, **organize a dog event**, or **chat with fellow dog lovers**, this app makes it easier than ever! 🐕🐾
-
-🔥 **Try it out and let your dog make some friends today!**  
+**Simba’s Friends** helps dog owners **build a community** around their pets—find playmates, organize meetups, and chat with fellow dog lovers. Try it today! 🐕🐾  
